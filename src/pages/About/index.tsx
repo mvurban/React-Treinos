@@ -22,6 +22,7 @@ export function About(){
                <li>React Router Dom V6</li>
                <li>Grid Layout</li>
                <li>Sass</li>
+               <li>Responsividade</li>
             </ul>
          </p>
 

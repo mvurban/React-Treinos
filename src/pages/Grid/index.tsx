@@ -5,6 +5,14 @@ export function Grid(){
    return(
       <>
          <Title>Grid Layout</Title>
+         <p>
+            Detalhes do funcionamento em: 
+         </p>
+         <p>
+            <a href="https://www.youtube.com/watch?v=HN1UjzRSdBk" target={"_blank"}>
+               https://www.youtube.com/watch?v=HN1UjzRSdBk
+            </a>
+         </p>
          <div className="container">
             <header>Header - grid-column: 1/4</header>
             <aside className="aside-left">
