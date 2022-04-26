@@ -5,3 +5,57 @@ html, body {
    width: 100%;
    height: 100%;  
 }
+html{
+   font-size: 62.5%;
+}
+
+body{
+   padding: 0 10% ;
+   background-color: #f1f1f1;
+   font-family: sans-serif;
+}
+
+p{
+   font-size: 1.4rem;
+}
+
+
+
+@media (max-width:768px){
+
+   html{
+      font-size:55%;  
+   }   
+
+   body{
+      padding: 0 10px;
+   }
+}
+
+@media (max-width:460px){
+
+   nav{
+      display: none  ;
+   }
+   .menu-tougle{      
+      width: 30px;
+      height: 30px;
+   }
+
+   .one, .two, .three{
+      width: 100%;
+      background-color: #000;
+      height: 2px;
+      margin: 6px auto;
+   }
+
+}
+
+
+@media (min-width:1500px ){
+
+   html{
+      font-size:75%;      
+   }
+
+}

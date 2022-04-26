@@ -3,7 +3,12 @@ import {Menu} from './style'
 
 export function Layout(){
    return(
-      <div>         
+      <div> 
+         <div className="menu-tougle">
+            <div className="one"></div>
+            <div className="two"></div>
+            <div className="three"></div>
+         </div>
       <Menu>
          <ul>
             <li><Link to="/">Home</Link></li>
@@ -14,7 +19,6 @@ export function Layout(){
          </ul>
       </Menu>
       <Outlet />
-   </div>
-      
+   </div>      
    );
 }
