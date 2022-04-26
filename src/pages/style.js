@@ -10,7 +10,7 @@ export const Title = styled.h2`
 
 export const SubTitle = styled.h4`
    font-family: sans-serif;
-   font-size:14px;
+   font-size:16px;
    padding:35px 0 0;
 `;
 
