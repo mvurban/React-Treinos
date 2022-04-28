@@ -22,10 +22,10 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: checkout 
-         uses: actions/checkout@v1
+      - name: Checkout 
+         uses: actions/checkout@v1  
 
-      - name: install and build
+      - name: Install and build
          run: npm install && npm run build
 
       -name: deploy
