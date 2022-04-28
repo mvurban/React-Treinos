@@ -1,12 +1,12 @@
-name: Deploy React Application
+name: mvurban - Deploy React Application
 
 # Controls when the action will run. 
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -32,7 +32,7 @@ jobs:
           npm run build --if-present
           npm test      
       - name: deploy to gh-pages
-        uses: mvurban /actions-gh-pages@v3
+        uses: mvurban/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./build 
