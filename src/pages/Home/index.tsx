@@ -3,7 +3,7 @@ import {Title} from '../style'
 export function Home(){
    return(
       <>
-         <Title>React JS - Exercícios 2</Title>
+         <Title>React JS - Exercícios 22</Title>
          <p>
             Treino e uso de funcionalidades mais comuns no desenvolvimento front-end.             
          </p>
