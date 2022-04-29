@@ -10,7 +10,7 @@ jobs:
 
       stragegy: 
          matrix: 
-            node-version:[16.x]
+            node-version:[8.x, 10.x, 12.x]
 
       steps:
          -  name: Checkout
@@ -22,9 +22,9 @@ jobs:
                node-version: ${{ matrix.node-version }}
 
          -  name: Install 
-            uses: npm install 
+            run: npm install 
 
          -  name: Deploy
-            uses: npm run deploy
+            run: npm run deploy
 
 
