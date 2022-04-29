@@ -1,6 +1,6 @@
 
 import { Link, Outlet } from "react-router-dom";
-import { Menu } from './style'
+import  './style.scss'
 
 export function Layout() {
   
@@ -35,7 +35,7 @@ export function Layout() {
                <div className="two"></div>
                <div className="three"></div>
             </div>
-            <Menu>
+            <nav className="nav-container">
                <ul>
                   <li><Link onClick={()=>closeMenu()} to="/" >Home</Link></li>
                   <li><Link onClick={()=>closeMenu()} to="../Rotas/">React Router 6</Link></li>
@@ -43,10 +43,12 @@ export function Layout() {
                   <li><Link onClick={()=>closeMenu()} to="../Styled/">Styled Components</Link></li>
                   <li><Link onClick={()=>closeMenu()} to="../About/">About</Link></li>
                </ul>
-            </Menu>
+            </nav>
 
          </div>
-         <Outlet />
+         <div className="main-container">
+            <Outlet />
+         </div>
       </div>
    );
 }

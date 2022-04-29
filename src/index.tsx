@@ -4,6 +4,28 @@ import { HashRouter } from 'react-router-dom';
 import './index.css';
 import App from './pages/App';
 
+
+function toubleShaddow(){
+   
+   window.addEventListener("scroll", event => {
+      const menuContainer = document.querySelector('.nav-container');
+      if(window.scrollY > 30){
+         if(!menuContainer?.classList.contains("scrolled"))
+            menuContainer?.classList.add("scrolled")
+      }
+      if(window.scrollY <= 30){
+         if(menuContainer?.classList.contains("scrolled"))
+            menuContainer?.classList.remove("scrolled")
+      }
+   })
+   
+   //console.log(document.body.scrollTop);
+   
+}
+
+
+document.body.onscroll = ()=>toubleShaddow()
+
 ReactDOM.render(
   <React.StrictMode>
       <HashRouter>

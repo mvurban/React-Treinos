@@ -1,8 +1,11 @@
-import styled from 'styled-components';
 
-export const Menu = styled.nav`
+
+.nav-container{
    background-color:#fff  ;   
    padding:3px;   
+   position:fixed;
+   top:0;
+   width:100%;      
 
    ul{
       list-style:none;
@@ -17,8 +20,14 @@ export const Menu = styled.nav`
       font-size:1.4rem;
       color:#ff6600;
    }
-   a:hover{
+   a:hover{ 
       text-decoration:underline;
    }
 
-`;
+}
+
+.scrolled{
+   box-shadow: 0px 10px 20px  #aaa;
+   transition: box-shadow 0.4s ease-in-out;
+   
+}

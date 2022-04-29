@@ -10,7 +10,7 @@ html{
 }
 
 body{
-   padding: 0 10% ;
+   /* padding: 0 10% ; */
    background-color: #f1f1f1;
    font-family: sans-serif;
 }
@@ -18,6 +18,10 @@ body{
 p{
    font-size: 1.4rem;
 }
+.main-container{
+   padding: 30px 30px;
+}
+
 
 @media (min-width:1500px ){ 
 
@@ -46,7 +50,7 @@ p{
 
    .menu-tougle{      
       width: 30px;
-      height: 30px;      
+      height: 30px;         
    }
 
    .one, .two, .three{
@@ -87,6 +91,7 @@ p{
    .menu-container.on nav{
       display: block;      
       padding-left: 10px;
+      margin-top: 30px;
    }
 
    .menu-container.on nav ul{
