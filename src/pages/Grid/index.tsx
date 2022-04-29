@@ -9,7 +9,7 @@ export function Grid(){
             Detalhes do funcionamento em: 
          </p>
          <p>
-            <a href="https://www.youtube.com/watch?v=HN1UjzRSdBk" target={"_blank"}>
+            <a href="https://www.youtube.com/watch?v=HN1UjzRSdBk" target={"_blank"} rel="noreferrer" >
                https://www.youtube.com/watch?v=HN1UjzRSdBk
             </a>
          </p>

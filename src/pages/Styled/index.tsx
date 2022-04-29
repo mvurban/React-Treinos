@@ -33,7 +33,7 @@ export function Styled(){
          <p>Mais detalhes:</p>
 
          <p>Ver o vídeo abaixo que ensina como usar o Styled components.</p>
-         <a href="https://www.youtube.com/watch?v=R3S8DEzEn6s" target={"_blank"}>https://www.youtube.com/watch?v=R3S8DEzEn6s</a>
+         <a href="https://www.youtube.com/watch?v=R3S8DEzEn6s" target={"_blank"} rel="noreferrer" >https://www.youtube.com/watch?v=R3S8DEzEn6s</a>
       </div>
    );
 }
