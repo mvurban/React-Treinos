@@ -21,10 +21,10 @@ jobs:
             with:
                node-version: ${{ matrix.node-version }}
 
-         -  name: Install 
-            run: npm install 
 
-         -  name: Deploy
-            run: npm run deploy 
+
+         -  name: Echo
+            run: Echo 'teste final'
+
 
 
