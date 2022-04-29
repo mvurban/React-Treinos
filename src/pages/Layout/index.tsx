@@ -6,6 +6,7 @@ export function Layout() {
   
    var showHamburgerMenu = false;
 
+   
    function tougleMenu(){
 
       showHamburgerMenu = !showHamburgerMenu
@@ -14,7 +15,17 @@ export function Layout() {
 
       menuContainer?.classList.toggle("on", showHamburgerMenu)
       document.body.style.overflow = showHamburgerMenu ? 'hidden' : '';
+      
    }
+
+   function closeMenu(){
+      
+      const menuContainer = document.querySelector(".menu-container")     
+      menuContainer?.classList.remove("on")
+      document.body.style.overflow = '';
+      showHamburgerMenu = false;      
+   }
+
 
    return (
       <div>
@@ -26,11 +37,11 @@ export function Layout() {
             </div>
             <Menu>
                <ul>
-                  <li><Link onClick={()=>tougleMenu()} to="/" >Home</Link></li>
-                  <li><Link onClick={()=>tougleMenu()} to="../Rotas/">React Router 6</Link></li>
-                  <li><Link onClick={()=>tougleMenu()} to="../Grid/">Grid Layout</Link></li>
-                  <li><Link onClick={()=>tougleMenu()} to="../Styled/">Styled Components</Link></li>
-                  <li><Link onClick={()=>tougleMenu()} to="../About/">About</Link></li>
+                  <li><Link onClick={()=>closeMenu()} to="/" >Home</Link></li>
+                  <li><Link onClick={()=>closeMenu()} to="../Rotas/">React Router 6</Link></li>
+                  <li><Link onClick={()=>closeMenu()} to="../Grid/">Grid Layout</Link></li>
+                  <li><Link onClick={()=>closeMenu()} to="../Styled/">Styled Components</Link></li>
+                  <li><Link onClick={()=>closeMenu()} to="../About/">About</Link></li>
                </ul>
             </Menu>
 
